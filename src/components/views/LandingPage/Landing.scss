@@ -1,0 +1,147 @@
+@import '@/variables';
+
+@mixin centerer {
+  position: absolute;
+  top: 36%;
+  left: 51%;  
+  transform: translate(-50%, -50%);
+}
+
+@mixin cdStyle {
+  width: 589px;
+  height: 589px;
+  background-color: #393535;
+  border-radius: 50%;
+  overflow: hidden;
+  @include centerer;
+}
+
+@mixin ImgStyle {
+  width: 1002px;
+  position: absolute;
+  bottom: 28px;
+  left: -274px;
+}
+
+@mixin spin-animation($image-exists: true) {
+  @if $image-exists {
+    @keyframes spin {
+      0% {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  }
+}
+
+.LandingContainer{
+  width: 1500px;
+  padding-bottom: 700px;
+  @include relativeAuto;
+  top: 90px;
+  background-color:#ffffff5a;
+  border-radius: 20px;
+  border: solid 4px var(--white);
+  @include box-Shadow;
+
+  .TopText{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 60px;
+    top: 25px;
+    font-size: 20px;
+    color: var(--pink);
+  }
+
+  .LandingContainer_left {
+    width: 739px;
+    height: 700px;
+    float: left;
+    margin-left: 330px;
+    position: relative;
+  }
+
+  .lpimg {
+    position: absolute;
+    width: 550px;
+    height: 730px;
+    top: -10px;
+    right: -21px;       
+  }
+
+  .LandingContainer_right {
+
+    .LandingContainer_ModalBox{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 45px;
+      right: 40px;
+      border-radius: 10px;
+      background-color: var(--white);
+      @include box-Shadow;
+    }
+
+    .VideoModal_Container{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      right: 40px;
+      border-radius: 10px;
+      background-color: var(--white);
+      @include box-Shadow;
+      top: 118px;
+    }
+  }
+
+  .Round-cd{
+    width: 255px;
+    height: 255px;
+	  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	  border-radius: 50%;
+    margin-left: 480px;
+	  overflow: hidden;
+	  @include centerer;
+    @include spin-animation(false);
+
+    .Inner_box {
+      width: 100px;
+      height: 100px;
+      z-index: 200;
+      border-radius: 50%;
+      background: #2f2c2c;
+      position: absolute;
+      top: 30%;
+      left: 32%;
+    }
+
+    .NotRound{
+      @include cdStyle ;
+
+      img{
+        @include ImgStyle();
+      }
+    }
+
+    .Round-cd__spin{
+      @include cdStyle;
+      animation: spin 20s linear infinite;
+      animation-play-state: paused;
+      @include spin-animation();
+      animation-play-state: running ;
+
+      img{
+        @include ImgStyle();
+        @include spin-animation();
+      }
+    }
+  }
+}
+
+
+
+
+
