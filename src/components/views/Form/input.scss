@@ -1,0 +1,29 @@
+@import '@/variables';
+
+.InputContainer {
+    width: 430px;
+    height: 55px;
+    top: 50px;
+    left: 150px;
+    position: absolute;
+    border-radius: 30px;
+    background-color:var(--white);
+    @include box-Shadow;
+
+    .input_title{
+      width: 340px;
+      margin-top: 10px;
+      height: 40px;
+      margin-left: 50px;
+      outline: none;
+      background-color:var(--white);
+      border: 0;
+    }
+
+    ::placeholder{
+      font-weight: bold;
+      color: var(--pink);
+      font-size: 15px;
+      font-family: 'Dovemayo_gothic';
+    } 
+}
