@@ -1,0 +1,18 @@
+@import '@/variables';
+
+.TimeNow{
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    right: 0;
+
+    span {
+        @include absolutecenter;
+        width: 268px;
+        font-size: 60px;
+        color: var(--white);
+        @include text-Shadow;
+    }   
+  } 
