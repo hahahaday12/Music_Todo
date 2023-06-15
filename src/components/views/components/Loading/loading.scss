@@ -1,0 +1,8 @@
+@import'@/variables';
+
+.Loadingbox{
+  width: 60px;
+  height: 60px;
+  @include absolutecenter;
+  top: 190px;   
+}
