@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('/imge/mouselogo.png') 25 25, default !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dovemayo_gothic';
+};
+
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-image: url('../imge/background.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  -webkit-animation: slidein 23s;
+  animation: slidein 23s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  margin: 0;
+  font-family: 'Dovemayo_gothic';              
+}
+
+
+@-webkit-keyframes slidein {
+  from {background-position: top; background-size:3000px;}
+  to {background-position: -200px 0px; background-size:2750px;}
+}
+
+@keyframes slidein {
+  from {background-position: top; background-size:5300px;}
+  to {background-position: -200px 0px; background-size:5500px;}
+}
+
+a {
+  text-decoration: none;
+}
+
