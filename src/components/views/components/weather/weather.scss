@@ -1,0 +1,110 @@
+@import '@/variables';
+
+@mixin text-shadow {
+  text-shadow:3px 3px 3px var(--pink);
+}
+
+@mixin commonPadding {
+  padding: 10px 10px 10px 10px;
+}
+
+.WeatherContainer {
+  width: 350px;
+  height: 510px;
+  position: absolute;
+  top: 180px;
+  margin-left: 40px;
+  border-radius: 20px;
+  border:  solid 4px var(--white);
+  @include box-Shadow;
+
+  .WeatherContainer-top {
+    width:345px;
+    height: 190px;
+    float: top;
+    position: absolute;
+    border-bottom: 2px solid;
+    border-bottom-color: var(--white);
+    
+
+    img{
+      width: 200px;
+      height: 160px;
+      @include absolutecenter;
+      animation: bounce 1s infinite alternate;
+    }
+  }
+
+  .WeatherContainer-bottom {
+    width:260px;
+    height: 310px;
+    top: 190px;
+    @include relativeAuto;
+
+    .WeatherContainer-bottom__center {
+      width: 160px;
+      height: 310px;
+      @include relativecenter;
+
+
+      .WeatherContainer-temp{
+        width: 192px;
+        height: 70px;
+        font-size: 60px;
+        @include absoluteAuto;
+        color: var(--white);
+        margin-top: 10px;
+        @include text-shadow;
+      }
+
+      .WeatherContainer-name{
+        width: 130px;
+        height: 60px;
+        @include absoluteAuto;
+        left: 0;
+        right: 0;
+        color: var(--white);
+        font-size: 40px;
+        bottom:140px;
+        @include commonPadding;
+        @include text-shadow;
+      }
+
+    }
+
+    .Localname {
+      width: 160px;
+      height: 80px;
+      bottom: 10px;
+      position: relative;
+      top: 200px;
+      left: 0;
+      right: 10px;
+   
+    
+      span {
+        @include absolutecenter;
+        top: 1px;
+        bottom: 10px;
+        width: 200px;
+        height: 80px;
+        font-size: 45px;
+        @include commonPadding;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include text-shadow;
+        color: var(--white);
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 30px;
+  }
+}
