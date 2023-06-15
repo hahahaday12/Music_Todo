@@ -1,0 +1,52 @@
+:root {
+    --lightpink:#FFCAC8;
+    --pink:#FF7D7D;
+    --darkgray:#ffffff16;
+    --gray:#868686;
+    --white:#F0F0F0;
+    --navy:#003164;
+    --black:#000000;
+}
+
+@mixin flexAbsolute {
+  display: flex;
+  position: absolute;
+};
+
+@mixin flexRelative {
+  display: flex;
+  position: relative;
+};
+
+@mixin absolutecenter {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;  
+}
+
+@mixin relativecenter {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;  
+}
+
+@mixin relativeAuto {
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin absoluteAuto {
+  position: absolute;
+  margin: 0 auto;
+}
+
+@mixin text-Shadow {
+  text-shadow:3px 3px 3px var(--pink);
+}
+
+@mixin box-Shadow {
+  box-shadow: 10px 10px 26px var(--gray), -12px -12px 36px var(--white);
+}
+
