@@ -68,7 +68,7 @@ $ npm run dev
 
 ---
 
-## ✨ 주요 기능✨
+## ✨ 구현 기능✨
 - 날씨 openApi를 이용하여 현재 위치에 맞는 날씨 데이터와 온도 데이터를 가져오고, 온도에 따라 날씨 이모티콘이 다르게 출력되도록 구현하였습니다. 
 - todolist를 등록, 삭제, 수정 기능을 구현하였습니다.
 - youtube openApi 를 이용하여 음악 아이콘을 클릭시 모달창이 뜨고, 현재 저장된 playlist 가 호출되게 구현하였습니다.
@@ -76,7 +76,7 @@ $ npm run dev
 - 현재 로컬 시간을 구하여, 현재 시간이 출력되는 기능을 구현하였습니다.
 - 
 
-#### ⭐️ 1) 할 일 목록(List)이 출력 기능 . 2) 할 일 항목(Item)추가 기능.
+#### ⭐️ 1) 할 일 목록(List)이 출력 기능 /  할 일 항목(Item)추가 기능.
 -> input 컴포넌트와 list컴포넌트를 나누었기때문에 둘의 컴포넌트가 import 되어있는 LandingPage에 props로 상태값을 넘겨 줘야 합니다. <br/>
 따라, input  컴포넌트 에는  기본값 {setItem} 를 넘겨주고 결고 값이 나타나는 result 창에는 {selectItem} 값을 넘겨 주었습니다. <br/>
 -> input에 할일 데이터를 입력한 onChange 의 함수가 실행되고 등록 button 을 클릭하면 props.setData 를 사용해  정보를 SearchResult 의 컴포넌트에 데이터를 받아오게 됩니다.
@@ -114,7 +114,7 @@ const [dataList, setDatalist] = useState([]);
 -> map을 사용해서 dataList 를 배열 list 로 나타내게끔 구현하였습니다. 
 
 
-#### ⭐️ 3) 할 일 항목 수정기능.
+#### ⭐️ 2) 할 일 항목 수정기능.
 
 <img width="350" height="40" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/63ad47de-7d04-456d-957f-a40bba6034db"> <br/>
 <img width="350" height="40" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/43abf676-a4c6-421c-ad7e-bc63ad09e7c8">
@@ -131,12 +131,14 @@ const [dataList, setDatalist] = useState([]);
 -> 수정중일때 나타나는 
 
 #### ⭐️ 3) 시계 아이콘 hover시 등록된 날짜, 수정된 날짜 보이기.
+-> 
 
-
-#### ⭐️ 4) Youtube OpenApi 를 사용하여 음악 플레이리스트, 비디오 플레이리스트  노출 기능
-
+#### ⭐️ 4) Youtube OpenApi, recoil 을 사용하여 음악 플레이리스트, 비디오 플레이리스트  노출 기능
+-> 
 
 #### ⭐️ 5) 날씨 openApi를 사용하여 현재 위치, 현재온도 를 가져오고, 현재위치에 대한 날씨 데이터에 맞는 아이콘 출력.
+-> 
+
 
 
 
@@ -153,7 +155,7 @@ const [dataList, setDatalist] = useState([]);
 
 
 
--------
+
 
 
 
