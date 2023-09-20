@@ -92,16 +92,14 @@ const [selectItem, setItem] = useState(false);
 ```
  ▶Input.jsx
  
-<img width="450" alt="image" src="https://github.com/hahahaday12/React-Todo/assets/101441685/f4743be2-9c4b-487e-9c08-f766dca96a08"> <br/>
-<img width="450" alt="image" src="https://github.com/hahahaday12/React-Todo/assets/101441685/a008e486-e937-40d7-b261-e23586a78683">
+
 
 -> 처음 props로 넘어온 setData의 기본 값은 데이터가 등록되기 전 상태이기 때문에 임의의 변수 flag = flase 값을 넣어 주었습니다. <br/>
 -> 그후 alert창에서  등록에 대한 유무를 물어본후에 , api를 할당해주었던 변수 todoPost를 이용해서 데이터를 넘겨 준후 props.setData(flag) flag 상태를 true 값으로 변경해 주었습니다. 
 
  ▶TodoResult.jsx
  
- <img width="450" alt="image" src="https://github.com/hahahaday12/React-Todo/assets/101441685/bd5bb909-358f-4fbd-a43d-3108959414b9"> <br/>
- <img width="450" alt="image" src="https://github.com/hahahaday12/React-Todo/assets/101441685/d0964471-263e-471a-ba5e-21f3a3aad704">
+
 
 ```javascript
 const [dataList, setDatalist] = useState([]);
@@ -116,16 +114,15 @@ const [dataList, setDatalist] = useState([]);
 
 #### ⭐️ 2) 할 일 항목 수정기능.
 
-<img width="350" height="40" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/63ad47de-7d04-456d-957f-a40bba6034db"> <br/>
-<img width="350" height="40" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/43abf676-a4c6-421c-ad7e-bc63ad09e7c8">
+
 
 ->  {editingItemId === item.id ? 의 조건식을 주어, 수정하려고 하는 editingItemId  와 현재 item.id 가 일치하면 
 
-<img width="450" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/7118347b-ea0c-4838-a425-85876aa08d2b">
+
 
 -> 리스트창을 input 으로 바꿔주고, 재 등록 할수 있도록 체크 표시 아이콘으로 바꿔주었습니다. <br/>
 
-<img width="450" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/fb0d8627-db0a-4276-99f3-ffa5d38d9c28">
+
 
 -> 아이디 값이 일치하지 않을시 (수정되기 전의 모습) flase값의 위치에 있는 코드가 실행됩니다. <br/>
 -> 수정중일때 나타나는 
