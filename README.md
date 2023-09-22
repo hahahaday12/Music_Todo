@@ -1,4 +1,4 @@
-## 🎶MusicTodo🎶
+![ezgif com-video-to-gif (16)](https://github.com/hahahaday12/Music_Todo/assets/101441685/b4950a00-4992-4e27-b0c2-7a2d718a180d)## 🎶MusicTodo🎶
 
 ## 배포 주소
 -> https://master--todolisthahaday.netlify.app/
@@ -59,6 +59,10 @@ $ npm run dev
 | 메인 페이지  | 
 | :-------------------------------------------: |
 |  <img width="600" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/adb2377e-6df9-4224-8394-7811256303be">| 
+| Todo 등록 | 
+|  <img width="700" height="400" alt="image" src="https://github.com/hahahaday12/WinkBook/assets/101441685/3b9f2ec4-1a43-456d-9c64-b176c7611c73">| 
+| Todo 수정, 삭제 | 
+|  <img width="700" height="400" alt="image" src="https://github.com/hahahaday12/WinkBook/assets/101441685/bb82c781-4698-4ba1-9954-873b49422aab">| 
 | 음악 플레이리스트 | 
 |  <img width="400" height="500" alt="image" src="https://github.com/hahahaday12/todo_test/assets/101441685/f9557a58-87be-4130-b03c-a28fd148c9c2">| 
 | 비디오 플레이리스트 | 
