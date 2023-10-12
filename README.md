@@ -1,4 +1,4 @@
-![ezgif com-video-to-gif (16)](https://github.com/hahahaday12/Music_Todo/assets/101441685/b4950a00-4992-4e27-b0c2-7a2d718a180d)## 🎶MusicTodo🎶
+## 🎶MusicTodo🎶
 
 ## 배포 주소
 -> https://master--todolisthahaday.netlify.app/
